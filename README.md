@@ -1,6 +1,7 @@
 # Alphafold2 trimmed to accept a sequence alignment
 Authors: [Bikash Shrestha](https://github.com/shrestha-bikash)
 
+### About this code:
 * This is the mini/light/trimmed version of Alphafold2; the sequence alignment part in AF2 is removed.
 * Our version does NOT require Docker.
 * This implementation accepts an alignment file in `a3m` format. 
