@@ -1,5 +1,6 @@
 ## Alphafold2 trimmed to accept a sequence alignment (non-Docker version)
-This is the modified version of Alphafold 2 that does not require docker.
+
+This is the trimmed version of Alphafold 2 that does not require docker.
 
 In this pipeline, the program accepts an alignment file in a3m format. (Note: This program does not generate MSA files). It helps to evaluate the given MSA file using alphafold prediction results.
 
