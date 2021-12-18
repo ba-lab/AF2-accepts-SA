@@ -67,5 +67,5 @@ bash run_alphafold.sh -d <path_to_params_dir> -o <output_dir> -m model_1,model_2
 We tested this implementation on `CUDA 10.1` in a `Ubuntu 18.04.4 LTS` system with hardware configuration: Dual 4215R 3.2GHz CPUs, 128 GB RAM, and 2 NVIDIA Quadro RTX 6000 GUPs, each with 24GB memory.
 
 # References
-* To create this code base, the original AlphaFold2 repository [https://github.com/deepmind/alphafold] was used
+* To create this code base, we used the original AlphaFold2 [repository]([https://github.com/deepmind/alphafold)
 * We also used [this](https://github.com/kalininalab/alphafold_non_docker) another non-Docker version of AF2
