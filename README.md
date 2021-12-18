@@ -1,9 +1,8 @@
 ## Alphafold2 trimmed to accept a sequence alignment
 
-This is the mini/light/trimmed version of Alphafold2 that does not require Docker.
-
-In this pipeline, the program accepts an alignment file in a3m format. (Note: This program does not generate MSA files). It helps to evaluate the given MSA file using alphafold prediction results.
-
+* This is the mini/light/trimmed version of Alphafold2; the sequence alignment part in AF2 is removed.
+* Our version does NOT require Docker.
+* This implementation accepts an alignment file in `a3m` format. 
 
 ## Install conda using miniconda if not installed already
 ```
