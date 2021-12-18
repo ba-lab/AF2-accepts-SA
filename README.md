@@ -4,7 +4,7 @@
 * Our version does NOT require Docker.
 * This implementation accepts an alignment file in `a3m` format. 
 
-## Steps to install AF2 (this version)
+# Steps to install AF2 (this version)
 
 ### 1. If not installed, install conda using miniconda
 ```
