@@ -56,16 +56,16 @@ cd ~/miniconda3/envs/<env_name>/lib/python3.8/site-packages/
 patch -p0 < <path_to_alphafold>/docker/openmm.patch
 ```
 
-## How to test (after installing)?
+# How to test (after installing)?
 ```
 bash run_alphafold.sh -d <path_to_params_dir> -o <output_dir> -m model_1,model_2,model_3,model_4,model_5 -f <path_to_fasta> -s <path_to_a3m_file> -t 2019-05-14
 ```
 - -m: at least one model name must be provided
 - -t: template date (refer alphafold github repository for more details)
 
-## Test environment
+# Test environment
 We tested this implementation on `CUDA 10.1` in a `Ubuntu 18.04.4 LTS` system with hardware configuration: Dual 4215R 3.2GHz CPUs, 128 GB RAM, and 2 NVIDIA Quadro RTX 6000 GUPs each with 24GB memory.
 
-## References
+# References
 * To create this code base, the original AlphaFold2 repository [https://github.com/deepmind/alphafold] was used
 * We also used [this](https://github.com/kalininalab/alphafold_non_docker) another non-Docker version of AF2
