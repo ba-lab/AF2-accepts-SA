@@ -26,7 +26,7 @@ conda install -y -c conda-forge openmm==7.5.1 cudnn==8.2.1.32 pdbfixer==1.7
 conda install -y -c bioconda hmmer==3.3.2 hhsuite==3.3.0 kalign2==2.04
 ```
 
-### 4. Install other alphafold dependencies using pip
+### 4. Install other dependencies using pip
 ```
 pip install absl-py==0.13.0 biopython==1.79 chex==0.0.7 dm-haiku==0.0.4 dm-tree==0.1.6 immutabledict==2.0.0 jax==0.2.14 ml-collections==0.1.0 numpy==1.19.5 scipy==1.7.0 tensorflow==2.5.0
 ```
@@ -36,7 +36,7 @@ pip install absl-py==0.13.0 biopython==1.79 chex==0.0.7 dm-haiku==0.0.4 dm-tree=
 pip install --upgrade jax jaxlib==0.1.69+cuda101 -f https://storage.googleapis.com/jax-releases/jax_releases.html
 ```
 
-### 6. Download Alphafold parameters
+### 6. Download AlphaFold parameters
 ```
 wget https://storage.googleapis.com/alphafold/alphafold_params_2021-07-14.tar -P <path_to_params_dir>
 
@@ -61,10 +61,10 @@ patch -p0 < <path_to_alphafold>/docker/openmm.patch
 bash run_alphafold.sh -d <path_to_params_dir> -o <output_dir> -m model_1,model_2,model_3,model_4,model_5 -f <path_to_fasta> -s <path_to_a3m_file> -t 2019-05-14
 ```
 - -m: at least one model name must be provided
-- -t: template date (refer alphafold github repository for more details)
+- -t: template date (refer AlphaFold Github repository for more details)
 
 # Test environment
-We tested this implementation on `CUDA 10.1` in a `Ubuntu 18.04.4 LTS` system with hardware configuration: Dual 4215R 3.2GHz CPUs, 128 GB RAM, and 2 NVIDIA Quadro RTX 6000 GUPs each with 24GB memory.
+We tested this implementation on `CUDA 10.1` in a `Ubuntu 18.04.4 LTS` system with hardware configuration: Dual 4215R 3.2GHz CPUs, 128 GB RAM, and 2 NVIDIA Quadro RTX 6000 GUPs, each with 24GB memory.
 
 # References
 * To create this code base, the original AlphaFold2 repository [https://github.com/deepmind/alphafold] was used
