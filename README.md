@@ -4,7 +4,9 @@
 * Our version does NOT require Docker.
 * This implementation accepts an alignment file in `a3m` format. 
 
-## Install conda using miniconda if not installed already
+## Steps to install AF2 (this version)
+
+### Install conda using miniconda if not installed already
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
